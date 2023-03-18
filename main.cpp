@@ -163,4 +163,20 @@ void xoa_du_lieu_cu(int toadox[], int toadoy[])
 		gotoXY(toadox[i], toadoy[i]);
 		cout << " ";
 	}
-	
+}
+void ve_ran(int toadox[], int toadoy[])
+{
+	for (int i = 0; i < sl; i++)
+	{
+		gotoXY(toadox[i], toadoy[i]);
+		if (i == 0)
+		{
+			cout << "0";
+		}
+		else
+		{
+			cout << "o";
+		}
+	}
+}
+
