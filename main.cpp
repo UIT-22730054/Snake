@@ -1,8 +1,8 @@
-#include <iostream.h>
-#include <windows.h>
-#include <cstdlib>
-#include <conio.h>
+#include <iostream>
+#include "mylib.h"
+#define MAX 100
 using namespace std;
+int sl = 7;
 void gotoxy( int column, int line );
 struct Point{
     int x,y,z;
