@@ -78,7 +78,7 @@ void khoi_tao_ran(int toadox[], int toadoy[])
 }
 void ve_ran(int toadox[], int toadoy[])
 {
-	for (int i = 0;i < sl;i++)
+	for (int i = 0; i < sl; i++)
 	{
 		gotoXY(toadox[i], toadoy[i]);
 		if (i == 0)
