@@ -163,3 +163,4 @@ void xoa_du_lieu_cu(int toadox[], int toadoy[])
 		gotoXY(toadox[i], toadoy[i]);
 		cout << " ";
 	}
+	
