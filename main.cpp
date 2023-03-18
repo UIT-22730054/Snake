@@ -118,7 +118,6 @@ void xu_ly_ran(int toadox[], int toadoy[], int x, int y, int& xqua, int& yqua)
 	//b3: ve ran
 	ve_ran(toadox, toadoy);
 }
-
 bool kt_ran_cham_tuong(int x0,int y0)
 {
 	//ran cham tuong tren
