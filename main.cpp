@@ -198,4 +198,20 @@ void xu_ly_ran(int toadox[], int toadoy[], int x, int y, int& xqua, int& yqua)
 	//b3: ve ran
 	ve_ran(toadox, toadoy);
 }
-
+void them(int a[], int x)
+{
+	for (int i = sl; i > 0; i--)
+	{
+		a[i] = a[i - 1];
+	}
+	a[0] = x;
+	sl++;
+}
+void xoa(int a[], int vt)
+{
+	for (int i = vt; i < sl; i++)
+	{
+		a[i] = a[i + 1];
+	}
+	sl--;
+}
