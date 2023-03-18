@@ -118,6 +118,24 @@ void xu_ly_ran(int toadox[], int toadoy[], int x, int y, int& xqua, int& yqua)
 	//b3: ve ran
 	ve_ran(toadox, toadoy);
 }
+void them(int a[], int x)
+{
+	for (int i = sl; i > 0; i--)
+	{
+		a[i] = a[i - 1];
+	}
+	a[0] = x;
+	sl++;
+}
+void xoa(int a[], int vt)
+{
+	for (int i = vt; i < sl; i++)
+	{
+		a[i] = a[i + 1];
+	}
+	sl--;
+}
+
 bool kt_ran_cham_tuong(int x0,int y0)
 {
 	//ran cham tuong tren
@@ -177,6 +195,41 @@ void tao_qua(int &xqua,int &yqua,int toadox[],int toadoy[])
 	gotoXY(xqua, yqua);
 	cout << "$";
 	SetColor(7);//mau trang
+}
+bool kt_ran_cham_tuong(int x0, int y0)
+{
+	//ran cham tuong tren
+	if (y0 == 1 && (x0 >= 10 && x0 <= 100))
+	{
+		return true;//gameover
+	}
+	//ran cham tuong duoi
+	else if (y0 == 26 && (x0 >= 10 && x0 <= 100))
+	{
+		return true;//gameover
+	}
+	//ran cham tuong phai
+	else if (x0 == 100 && (y0 >= 1 && y0 <= 26))
+	{
+		return true;//gameover
+	}
+	//ran cham tuong trai
+	else if (x0 == 10 && (y0 >= 1 && y0 <= 26))
+	{
+		return true;//gameover
+	}
+	return false;
+}
+bool kt_ran_cham_duoi(int toadox[], int toadoy[])
+{
+	for (int i = 1; i < sl; i++)
+	{
+		if ((toadox[0] == toadox[i]) && (toadoy[0] == toadoy[i]))
+		{
+			return true;//gameover
+		}
+	}
+	return false;
 }
 bool kt_ran_de_qua(int xqua, int yqua, int toadox[], int toadoy[])
 {
