@@ -78,7 +78,7 @@ void khoi_tao_ran(int toadox[], int toadoy[])
 }
 void ve_ran(int toadox[], int toadoy[])
 {
-	for (int i = 0; i < sl; i++)
+	for (int i = 0;i < sl;i++)
 	{
 		gotoXY(toadox[i], toadoy[i]);
 		if (i == 0)
@@ -99,7 +99,7 @@ void xoa_du_lieu_cu(int toadox[], int toadoy[])
 		cout << " ";
 	}
 }
-void xu_ly_ran(int toadox[], int toadoy[], int x, int y,int &xqua,int &yqua)
+void xu_ly_ran(int toadox[], int toadoy[], int x, int y, int& xqua, int& yqua)
 {
 	//b1: them toa do moi vao dau mang
 	them(toadox, x);
